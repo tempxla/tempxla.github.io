@@ -30,36 +30,54 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <ul id="list" style="margin: 20px">
-  </ul>
+  <div class="container" style="margin: 20px">
+    <div class="row">
+      <div class="three columns">
+        <h6>Social</h6>
+        <ul>
+          <li><a href="https://twitter.com/temp_la">twitter.com (x.com)</a></li>
+          <li><a href="https://tempxla.tumblr.com/">tumblr.com</a></li>
+          <li><a href="https://www.reddit.com/user/tempxla">reddit.com</a></li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6>Log</h6>
+        <ul>
+          <li><a href="https://www.last.fm/user/temp_la">last.fm</a></li>
+          <li><a href="https://bookmeter.com/users/856290">bookmeter.com</a></li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6>Memo</h6>
+        <ul>
+          <li><a href="https://github.com/tempxla">github.com</a></li>
+          <li><a href="https://tempxla.hatenablog.com/">hatenablog.com</a></li>
+          <li><a href="https://qiita.com/temp_la">qiita.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+        <h6>Social (alternative)</h6>
+        <ul>
+          <li><a href="https://mstdn.jp/web/@temp_la">mstdn.jp</a></li>
+          <li><a href="https://misskey.io/@temp_la">misskey.io</a></li>
+          <li><a href="https://bsky.app/profile/tempxla.bsky.social">bsky.app</a></li>
+          <li><a href="https://mixi.social/@temp_la">mixi.social</a></li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6>Read Only</h6>
+        <ul>
+          <li><a href="https://www.pixiv.net/users/4361287">pixiv.net</a></li>
+          <li><a href="https://www.youtube.com/@temp_la">youtube.com</a></li>
+          <li><a href="https://open.spotify.com/user/fhfx9k9ab3f29tu1zm3btboxu">spotify.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script type="text/javascript">
-  const urls = ["https://twitter.com/temp_la"
-                ,"https://www.last.fm/user/temp_la"
-                ,"https://bookmeter.com/users/856290"
-                ,"https://github.com/tempxla"
-                ,"https://tempxla.hatenablog.com/"
-                ,"https://tempxla.tumblr.com/"
-                ,"https://www.reddit.com/user/tempxla"
-                ,"https://qiita.com/temp_la"
-                ,"https://mstdn.jp/web/@temp_la"
-                ,"https://misskey.io/@temp_la"
-                ,"https://bsky.app/profile/tempxla.bsky.social"
-                ,"https://mixi.social/@temp_la"
-                ,"https://www.pixiv.net/users/4361287"
-                ,"https://www.youtube.com/@temp_la"
-                ,"https://open.spotify.com/user/fhfx9k9ab3f29tu1zm3btboxu"];
-  const ulTag = document.getElementById("list");
-  for (const url of urls) {
-      const aTag = document.createElement("a");
-      aTag.setAttribute("href", url);
-      aTag.textContent = url.replace(/^https:\/\//, "").replace(/\/.*/, "").replace(/.*\.([^\.]+)\.([^\.]+)$/, "$1.$2");
-      const liTag = document.createElement("li");
-      liTag.appendChild(aTag);
-      ulTag.appendChild(liTag);
-  }
-</script>
 </body>
 </html>
